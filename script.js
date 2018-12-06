@@ -16,3 +16,10 @@ var z = new osoba("Marta", "Serek", 4);
 x.specifiedValue = 12
 
 div.innerHTML = x + " " + x.specifiedValue + "<br>" + y + "<br>" + z;
+
+var ul = document.getElementById("kursyWWW");
+
+var liArray = ul.getElementsByTagName("li")
+
+alert(liArray[0].innerHTML);
+
