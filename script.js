@@ -17,9 +17,22 @@ x.specifiedValue = 12
 
 div.innerHTML = x + " " + x.specifiedValue + "<br>" + y + "<br>" + z;
 
+//------------------------
+
 var ul = document.getElementById("kursyWWW");
+var kursyWWW = ul.getElementsByTagName("li");
 
-var liArray = ul.getElementsByTagName("li")
+kursyWWW[kursyWWW.length] = "SAS";
 
-alert(liArray[0].innerHTML);
+var rezultat = document.getElementById("rezultat");
+
+var tmp = ["MySQL", "Ajax"];
+
+rezultat.innerHTML = kursyWWW.push("nowy");
+rezultat.innerHTML += "<br>---------------<br>";
+rezultat.innerHTML += kursyWWW.valueOf();
+
+function newFunction() {
+    kursyWWW.push("nowy");
+}
 
